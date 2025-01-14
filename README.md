@@ -1,6 +1,6 @@
 # experimenta_assignment2
 
-# team member :
+# team members :
 
 Mohammad Ali PourYaghoub shahkhali s6063201
 
