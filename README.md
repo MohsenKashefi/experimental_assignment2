@@ -1,4 +1,4 @@
-# experimenta_assignment2
+# experimental_assignment2
 
 # team members :
 
