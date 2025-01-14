@@ -6,7 +6,7 @@ Initial heuristic = 9.000
 b (8.000 | 0.000)b (7.000 | 0.001)b (6.000 | 0.002)b (5.000 | 0.003)b (4.000 | 0.004)b (3.000 | 0.005)b (2.000 | 0.006)b (1.000 | 0.007);;;; Solution Found
 ; States evaluated: 16
 ; Cost: 0.008
-; Time 0.02
+; Time 0.00
 0.000: (move_to rosbot loc4 loc0)  [0.001]
 0.001: (identify rosbot loc0 tgt1)  [0.001]
 0.002: (move_to rosbot loc0 loc1)  [0.001]

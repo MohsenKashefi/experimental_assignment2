@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <launch>
 	<!-- arguments -->
-	<arg name="domain_path" default="$(find assignment2_exprob)/PDDL/My_Domain.pddl" />
-	<arg name="problem_path" default="$(find assignment2_exprob)/PDDL/My_Problem.pddl" />
+	<arg name="domain_path" default="$(find assignment2_exprob)/PDDL/Robot_Domain.pddl" />
+	<arg name="problem_path" default="$(find assignment2_exprob)/PDDL/Robot_Problem.pddl" />
 	<!-- knowledge base -->
 	<node name="rosplan_knowledge_base" pkg="rosplan_knowledge_base" type="knowledgeBase" respawn="false"
 output="screen">

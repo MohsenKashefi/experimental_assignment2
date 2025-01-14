@@ -82,7 +82,7 @@ namespace KCL_rosplan {
 		
 	if (msg -> name == "move_to") {
 		// here the implementation of the action
-		std::cout << "Going from " << msg->parameters[1].value << " to " << msg->parameters[2].value << std::endl;
+		std::cout << "The Robot is Going from " << msg->parameters[1].value << " to " << msg->parameters[2].value << std::endl;
 		
 		
 		
@@ -121,7 +121,7 @@ namespace KCL_rosplan {
 	
 	else if (msg -> name == "identify") {
 	
-		std::cout << "Rotating to find the marker in Place" << std::endl;
+		std::cout << "The Robot is roatating to find the marker in location" << std::endl;
 		
 		while (flag) {
 		
@@ -136,7 +136,7 @@ namespace KCL_rosplan {
                 	
                 		flag = false ; 
                 		
-                		std::cout << "The marker with the following ID is found: x = " << MarkerID << std::endl;
+                		std::cout << "GOOOOOOOOOD , The marker found , id of marker is: x = " << MarkerID << std::endl;
                 		
                 		if(MarkerID < LeastID){
                 		
@@ -148,14 +148,14 @@ namespace KCL_rosplan {
                 			nh.setParam("least_id", LeastID);
 
 					// Log the updated goal location
-					std::cout << "Updated least marker ID: " << LeastID 
+					std::cout << "the Least marker id is updated : " << LeastID 
 						  << " at goal location x = " << LastLoc << std::endl;
                 		}
                 		
                 		else {
                 		
                 			// Log the updated goal location
-					std::cout << "Updated least marker ID: " << LeastID 
+					std::cout << "the Least marker id is updated : " << LeastID 
 						  << " at goal location x = " << LastLoc << std::endl;
                 		}
                 		
@@ -177,7 +177,7 @@ namespace KCL_rosplan {
 		nh.getParam("last_loc", LastLoc);
 		nh.getParam("least_id", LeastID);
 		
-		std::cout << "Going back to " << LastLoc << " with ID " << LeastID << std::endl;
+		std::cout << "The Robot is Going back to " << LastLoc << " with this ID " << LeastID << std::endl;
 		
 		goal.target_pose.header.frame_id = "map" ;
 		goal.target_pose.pose.orientation.w = 1.0;
