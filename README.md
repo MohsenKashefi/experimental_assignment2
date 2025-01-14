@@ -36,14 +36,14 @@ This project integrates a ROSPlan-based planning system for a mobile robot equip
    git clone https://github.com/MohsenKashefi/experimental_assignment2.git
    ```
 2. Install necessary dependencies
-3. 
-4. Replace the `marker_publish.cpp` file in the `aruco_ros` package with the modified version provided in this repository.
-
-5. install SLAM and ROSPlan
   
-6. Follow the installation instructions for the ROSPlan dependencies as outlined in their repository.
+3. Replace the `marker_publish.cpp` file in the `aruco_ros` package with the modified version provided in this repository.
 
-7. Launch the system:
+4. install SLAM and ROSPlan
+  
+5. Follow the installation instructions for the ROSPlan dependencies as outlined in their repository.(also you can find in the aulaweb)
+
+6. Launch the system:
    - Start the robot, Gazebo environment, SLAM, and MoveBase:
      ```bash
      roslaunch assignment2_exprob main.launch
@@ -63,7 +63,7 @@ This project integrates a ROSPlan-based planning system for a mobile robot equip
      rosservice call /rosplan_plan_dispatcher/dispatch_plan
      ```
 
-8. To view the generated plan:
+7. To view the generated plan:
    ```bash
    rostopic echo /rosplan_planner_interface/planner_output -p
    ```
